@@ -1,8 +1,83 @@
 * {
     font-family: 'Raleway', sans-serif;
+    
 }
 
-nav {
+.main-container {
+    margin: 15px;
+}
+
+header {
+   
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 61.09px;
+    height: 19px;
+}
+
+.box {
+    width: 113px;
+    height: 35px;
+}
+
+.box:hover {
+    border-top: 2px solid #0065FC;
+    padding-top: 20px;
+}
+
+.box:active {
+    border-top: stay 2px solid #0065FC;
+    padding-top: 20px;
+    
+}
+
+.box:visited { /*revenir sur cette partie */
+    border-top: active 2px solid #0065FC;
+    border-top: fixed;
+}
+
+nav, a {
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 22px;
+    font: 'Raleway';
+    line-height: 25.83px;
+    margin-bottom: 3px;
+}
+
+p {
+    font-size: 16px;
+    font: 'Raleway';
+    line-height: 18.78px;
+    margin-top: 3px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    font-size: 18px;
+    font: 'Raleway';
+    line-height: 21.13px;
+}
+
+.button { /*casse les boutons des mis en place(enlever le point pour reprendre le travail)*/ 
+    width: 134px;
+    height: 50px;
+    padding: 4px, 19px, 4px, 19px;
+    border-radius: 25px;
+    border: 2px #D9D9D9;
+    gap: 10px;
+    background-color: transparent;  
 }
