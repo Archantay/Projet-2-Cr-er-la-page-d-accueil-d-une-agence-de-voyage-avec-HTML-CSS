@@ -22,14 +22,15 @@
             </nav>
         </header>
     <main>
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre-ville ou en pleine nature</p>
-
+        <div class="headline">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+        </div>
         <form method="get" action="#">
-            <div>
-                <img src="Images/Vector.png" alt="Pointeur de localisation">
-                <input type="search" name="Ville" placeholder="Marseille, France">
-                <button>Rechercher</button>
+            <div class="form-content">
+                <img class="form-img" src="Images/Vector.png" alt="Pointeur de localisation">
+                <input type="search" name="Ville" placeholder= "Marseille, France" class="placeholder">
+                <button class="form-button">Rechercher</button>
             </div>
         </form>
         <div class="filters">
@@ -39,7 +40,7 @@
             <button>Romantique</button>
             <button>Nos Pépites</button>
         </div>
-        <div>
+        <div class="info">
             <i class="fas fa-info-circle"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
