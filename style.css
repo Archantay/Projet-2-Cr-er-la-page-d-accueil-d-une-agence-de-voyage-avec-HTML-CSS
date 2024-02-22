@@ -46,11 +46,18 @@ nav, a {
     color: black;
 }
 
+.info-group {
+    width: 1340px;
+    height: 281px;
+    gap: 35px;
+    margin-bottom: 56px;
+}
+
 .headline {
     width: 1340px;
     height: 53px;
     gap: 8px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 h1 {
@@ -68,7 +75,7 @@ p {
 }
 
 form {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .form-content {
@@ -119,9 +126,13 @@ form input {
 }
 
 .filters {
+    width: 758px;
+    height: 50px;
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+    align-items: center;
+    gap: 15px;
 }
 
 h3 {
@@ -130,19 +141,67 @@ h3 {
     line-height: 21.13px;
 }
 
-button { /*casse les boutons dès mis en place(enlever le point pour reprendre le travail)*/ 
-    width: 134px;
-    height: 50px;
-    padding: 4px 19px 4px 19px;
+  
+.filter-button {
+    display: inline;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    box-sizing: fit-content;
+    padding: 15px;
     border-radius: 25px;
-    border: 2px #D9D9D9;
-    gap: 10px;
-    background-color: transparent;  
+    border: 2px solid grey;
+    font-family: 'Raleway';
+    font-size: 17px;
+    line-height: 19.96px;
+    font-weight: bold;
+    gap: 4px;
+}
+
+.icones {
+    width: 22px;
+    height: 22px;
+    position: relative;
+}
+
+.icone-billet {
+    width: 22px;
+    height: 16.26px;
+}
+
+.icone-personnage {
+    width: 13.44px;
+    height: 22px;
+    bottom: 2px;
+}
+
+.icone-coeur {
+    width: 22px;
+    height: 18.33px;
+}
+
+.icone-flamme {
+    width: 18px;
+    height: 20.08px;
+}
+
+.filter-button:hover {
+    background-color: #DEEBFF;
 }
 
 .info {
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
 
-
+.info img {
+    display: inline;
+    border: 1px solid #F2F2F2 ;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    padding: 5.5px;
+    top: 3px;
+    position: relative;
+}
