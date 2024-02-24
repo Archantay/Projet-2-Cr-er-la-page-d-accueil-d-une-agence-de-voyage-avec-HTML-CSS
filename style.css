@@ -205,3 +205,55 @@ h3 {
     top: 3px;
     position: relative;
 }
+
+.hebergements-and-populaires {
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    width: Fill (1,340px);
+    height: Hug (614px);
+    gap: 40px;
+    padding: 5%;
+}
+
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 250.33px;
+    height: 80%;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    padding: 0px 0px 15px 0px;
+    gap: 5px;
+
+}
+
+.card-img {
+    object-fit: cover;
+    width: 96%;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    border: 5px solid white;
+}
+
+.card-title {
+    font-size: 16px;
+    position: relative;
+    bottom: 15px;
+    padding: 0px 0px 0px 20px;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    
+}
