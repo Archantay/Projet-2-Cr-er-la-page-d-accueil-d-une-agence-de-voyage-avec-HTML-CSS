@@ -254,7 +254,7 @@ h2 {
 }
 
 
-.grid-cards {
+.grid-cards-hebergement {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
