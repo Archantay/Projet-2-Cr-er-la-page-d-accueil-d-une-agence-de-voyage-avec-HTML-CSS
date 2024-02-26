@@ -1,49 +1,67 @@
 * {
     font-family: 'Raleway', sans-serif;
-    
+}
+
+body {
+    margin: 0px;
 }
 
 .main-container {
-    margin: 5px;
+    width:  1,440px;
+    height: 1722,02;
+    margin: 30px;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-
+    width: 1440px;
+    height: 79px;
+    margin-bottom: 30px;
+    
 }
 
 .logo {
-    width: 61.09px;
-    height: 19px;
+    width: 80px;
+    height: 25px;
+    padding: 30px 50px 30px 30px; 
+    align-items: center;
+}
+
+a.box {
+    margin: 0px;
 }
 
 .box {
-    width: 113px;
+    width: auto;
     height: 35px;
+    padding-top: 15px;
 }
 
 .box:hover {
     border-top: 2px solid #0065FC;
-    padding-top: 20px;
 }
 
-.box:active {
+.box:focus {
     border-top: 2px solid #0065FC;
-    padding-top: 20px;
     
 }
 
-.box::after { /*revenir sur cette partie */
-    border-top: 2px solid #0065FC;
+nav {
+    width: 344px;
+    height: 35px;
+    padding: 0px 50px 0px 50px;
+    justify-content: flex-end;
+    gap: 0px;
 }
-
 nav, a {
-    margin: 20px;
+    
+    display: flex;
+    margin: 5px 0px 20px 0px;
     text-decoration: none;
     color: black;
+    gap: 68px;
 }
 
 .info-group {
@@ -121,9 +139,6 @@ form input {
     text-align: center;
 }
 
-.form-button:hover {
-    border: 1px solid #F2F2F2 ;
-}
 
 .filters {
     width: 758px;
@@ -131,56 +146,59 @@ form input {
     display: flex;
     flex-direction: row;
     margin-bottom: 35px;
-    align-items: center;
     gap: 15px;
 }
 
 h3 {
+    position: relative;
     font-size: 18px;
     font-family: 'Raleway';
     line-height: 21.13px;
+    bottom: 5px;
 }
 
   
 .filter-button {
     display: inline;
+    width: auto;
     background-color: white;
     display: flex;
     flex-direction: row;
-    box-sizing: fit-content;
     padding: 15px;
-    border-radius: 25px;
+    padding-inline: 19px;
+    border-radius: 35px;
     border: 2px solid grey;
     font-family: 'Raleway';
     font-size: 17px;
     line-height: 19.96px;
     font-weight: bold;
-    gap: 4px;
+    gap: 10px;
+    white-space: nowrap;
 }
 
-.icones {
+.icons {
     width: 22px;
     height: 22px;
     position: relative;
 }
 
-.icone-billet {
+.icon-bill {
     width: 22px;
     height: 16.26px;
 }
 
-.icone-personnage {
+.icon-person {
     width: 13.44px;
     height: 22px;
     bottom: 2px;
 }
 
-.icone-coeur {
+.icon-heart {
     width: 22px;
     height: 18.33px;
 }
 
-.icone-flamme {
+.icon-fire {
     width: 18px;
     height: 20.08px;
 }
@@ -207,7 +225,7 @@ h3 {
     position: relative;
 }
 
-.hebergements-and-populaires {
+.hebergements-and-populars {
     display: flex;
     flex-direction: row;
     width: 1340px;
