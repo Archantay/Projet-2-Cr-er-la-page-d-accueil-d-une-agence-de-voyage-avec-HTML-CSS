@@ -6,7 +6,15 @@ body {
     margin: 0px;
 }
 
-.main-container {
+.main-conteneur {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+   
+}
+
+main {
     width:  1,440px;
     height: 1722,02;
     margin: 30px;
@@ -55,7 +63,7 @@ nav {
     justify-content: flex-end;
     gap: 0px;
 }
-nav, a {
+nav, .box {
     
     display: flex;
     margin: 5px 0px 20px 0px;
@@ -149,7 +157,7 @@ form input {
     gap: 15px;
 }
 
-h3 {
+.filter-title {
     position: relative;
     font-size: 18px;
     font-family: 'Raleway';
@@ -234,6 +242,8 @@ h3 {
 }
 
 .hebergements {
+    display: flex;
+    flex-direction: column;
     background-color: #F2F2F2;
     width: 871px;
     height: 614px;
@@ -243,6 +253,7 @@ h3 {
 }
 
 h2 {
+    width: 300.31px;
     font-family: Raleway;
     font-size: 22px;
     font-weight: 700;
@@ -260,7 +271,7 @@ h2 {
     gap: 30px;
 }
 
-.card {
+.card-hebergement {
     display: flex;
     flex-direction: column;
     width: 250.33px;
@@ -281,10 +292,12 @@ h2 {
 }
 
 .card-content {
+    display: flex;
+    flex-direction: column;
     width: 250.33px;
     height: 64.25px;
     padding: 0px 15px 0px 15px;
-    gap: 8px;
+    gap: 13px;
 }
 
 .card-title {
@@ -298,11 +311,20 @@ h2 {
 .card-subtitle {
     font-size: 14px;
     line-height: 16.44px;
+    margin: 0px;
     
+}
+
+.card-rating {
+    position: relative;
+    display: flex;
+    top: 6px;
+    gap: 2px;
 }
 
 .fa-star {
     color: #0065FC;
+    font-size: 13px;
 }
 
 .neutral-star {
@@ -310,6 +332,77 @@ h2 {
 }
 
 h3 {
-    margin-bottom: 0px;
+    margin: 0px;
 }
+
+.link-cards {
+    text-decoration: none;
+    color: black;
+}
+
+.populars {
+    background-color: #F2F2F2;
+    width: 370px;
+    height: 614px;
+    padding: 30px;
+    border-radius: 15px;
+    gap: 30px;
+}
+
+.populars-title {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    white-space: nowrap;
+}
+
+.fa-chart-line {
+    color: #0065FC;
+}
+
+.grid-cards-populars {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.card-popular {
+    display: flex;
+    flex-direction: row;
+    width: 369px;
+    height: 146px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.card-img-popular {
+    width: 123px;
+    height: 136px;
+    border-radius: 20px 0px 0px 20px;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+.card-content-popular {
+    display: flex;
+    flex-direction: column;
+    width: 246px;
+    height: 110px;
+    padding: 13px 5px 5px 10px;
+    gap: 50px;
+}
+
+.card-text-content-popular{
+    display: flex;
+    flex-direction: column;
+    height: 85px;
+    gap: 5px;
+}
+
+ .card-rating-popular {
+    position: relative;
+    top: 10px;
+    display: flex;
+    gap: 2px;
+ }
 
