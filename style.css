@@ -3,31 +3,36 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
     margin-top: 0px;
     margin-left: 30px;
 }
 
-.main-conteneur {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
 
 main {
+    display: flex;
+    flex-direction: column;
     width:  100%;
     max-width: 1440px;
-    height: 1485px;
-    margin: 30px;
+    height: 1550px;
+    margin: 0px 30px 0px 30px;
+    gap: 35px;
+}
+
+.main-container {
+    display: grid;
+    gap: 35px;
+}
+
+section {
+    box-sizing: content-box;
+    width: 100%;
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1440px;
+    width: 1474px;
     height: 79px;
 }
 
@@ -72,7 +77,7 @@ nav, .box {
 .info-group {
     display: flex;
     flex-direction: column;
-    width: 1440px;
+
     height: 281px;
     gap: 35px;
 }
@@ -80,7 +85,7 @@ nav, .box {
 .headline {
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 1402px;
     height: 53px;
     gap: 8px;
 }
@@ -233,7 +238,6 @@ form input {
 .hebergements-and-populars {
     display: flex;
     flex-direction: row;
-    width: 1440px;
     height: 644px;
     gap: 35px;
 }
@@ -271,7 +275,7 @@ h2 {
 .card-hebergement {
     display: flex;
     flex-direction: column;
-    width: 250.33px;
+    width: 270px;
     height: 207.25px;
     background-color: white;
     border-radius: 20px;
@@ -283,7 +287,7 @@ h2 {
 
 .card-img {
     object-fit: cover;
-    width: 240px;
+    width: 260px;
     height: 124px;
     border-radius: 20px 20px 0px 0px;
     border: 5px solid white;
@@ -349,8 +353,6 @@ h3 {
     gap: 30px;
 }
 
-
-
 .populars-title {
     display: flex;
     flex-direction: row;
@@ -382,7 +384,7 @@ h3 {
     display: flex;
     flex-direction: row;
     width: 369px;
-    height: 146px;
+    height: 155px;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0px 3px 15px 0px #0000001A;
@@ -390,7 +392,7 @@ h3 {
 
 .card-img-popular {
     width: 123px;
-    height: 136px;
+    height: 145px;
     border-radius: 20px 0px 0px 20px;
     border: 5px solid white;
     object-fit: cover;
@@ -414,15 +416,15 @@ h3 {
 
  .card-rating-popular {
     position: relative;
-    top: 10px;
+    top: 15px;
     display: flex;
     gap: 2px;
  }
 
  .activitys {
+    width: 1338px;
     display: flex;
     flex-direction: column;
-    width: 1440px;
     height: 495px;
     padding: 30px;
     gap: 30px;
@@ -430,7 +432,7 @@ h3 {
  
  .grid-cards-activity {
     display: grid;
-    width: 1280px;
+    width: 1345px;
     height: 439px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
@@ -439,14 +441,15 @@ h3 {
  .card-activity {
     display: flex;
     flex-direction: column;
-    width: 297.5px;
+    width: 310px;
     height: 439px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px #0000001A;
  }
 
  .card-img-activity {
-    width: 297.5px;
+    object-fit: cover;
+    width: 310px;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
  }
@@ -458,3 +461,35 @@ h3 {
     gap: 10px;
     margin: 0px;
  }
+
+ footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    width: 1340px;
+    height: 163px;
+    position: relative;
+    left: 60px;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    width: 446.67px;
+    height: 163px;
+    padding: 20px;
+    gap: 15px;
+    
+}
+
+ul, .link-footer {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: flex-start;
+    gap: 15px;
+    text-decoration: none;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+}
