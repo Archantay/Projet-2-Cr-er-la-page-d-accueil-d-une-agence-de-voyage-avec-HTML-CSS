@@ -482,6 +482,8 @@ h3 {
     padding: 20px 19px 20px 19px;
     gap: 10px;
     margin: 0px;
+    position: relative;
+    bottom: 4px;
 }
 
 
@@ -518,3 +520,43 @@ ul, .link-footer {
     margin: 0px;
 }
 
+/*  Media Queries */
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        gap: 35px;
+        height: 1970px;
+    }
+
+    .main-container {
+        gap: 50px;
+    }
+
+    .hebergements-and-populars {
+        flex-direction: column;
+        height: 914px;
+        gap: 50px;
+    }
+
+    .hebergements {
+        width: 92%;
+    }
+
+    .card-hebergement {
+        width: 100%;
+    }
+
+    .populars {
+        width: 92%;
+        height: 252px;
+    }
+
+    .grid-cards-populars {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .activitys {
+        width: 92%;
+    }
+    
+}
