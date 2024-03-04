@@ -1,10 +1,21 @@
+/*  General  */
 * {
     font-family: 'Raleway', sans-serif;
 }
 
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+    background-color: white;
+    height: 1863px;
+}
+
+
 body {
     margin-top: 0px;
     margin-left: 30px;
+    margin-bottom: 0px;
 }
 
 
@@ -28,6 +39,7 @@ section {
     width: 100%;
 }
 
+/*  Header  */
 header {
     display: flex;
     flex-direction: row;
@@ -74,6 +86,8 @@ nav, .box {
     gap: 68px;
 }
 
+
+/*  Section Info et recherche  */
 .info-group {
     display: flex;
     flex-direction: column;
@@ -231,10 +245,12 @@ form input {
     height: 8px;
     border-radius: 50%;
     padding: 5.5px;
-    top: 3px;
+    top: -1px;
     position: relative;
 }
 
+
+/* Section hebergements et populaires  */
 .hebergements-and-populars {
     display: flex;
     flex-direction: row;
@@ -242,6 +258,8 @@ form input {
     gap: 35px;
 }
 
+
+/* Hebergement  */
 .hebergements {
     display: flex;
     flex-direction: column;
@@ -342,6 +360,8 @@ h3 {
     color: black;
 }
 
+
+/* Populaires  */
 .populars {
     display: flex;
     flex-direction: column;
@@ -356,7 +376,7 @@ h3 {
 .populars-title {
     display: flex;
     flex-direction: row;
-    gap: 150px;
+    justify-content: space-between;
     white-space: nowrap;
 }
 
@@ -414,55 +434,59 @@ h3 {
     gap: 5px;
 }
 
- .card-rating-popular {
+.card-rating-popular {
     position: relative;
-    top: 15px;
+    top: 35px;
     display: flex;
     gap: 2px;
- }
+}
 
- .activitys {
+
+/*  Activités  */
+.activitys {
     width: 1338px;
     display: flex;
     flex-direction: column;
     height: 495px;
     padding: 30px;
     gap: 30px;
- }
+}
  
- .grid-cards-activity {
+.grid-cards-activity {
     display: grid;
     width: 1345px;
     height: 439px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
- }
+}
 
- .card-activity {
+.card-activity {
     display: flex;
     flex-direction: column;
     width: 310px;
     height: 439px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px #0000001A;
- }
+}
 
- .card-img-activity {
+.card-img-activity {
     object-fit: cover;
     width: 310px;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
- }
+}
 
- .activity-title {
+.activity-title {
     width: 297.5px;
     height: 20px;
     padding: 20px 19px 20px 19px;
     gap: 10px;
     margin: 0px;
- }
+}
 
- footer {
+
+/* Footer  */
+footer {
     display: flex;
     flex-direction: row;
     background-color: #F2F2F2;
@@ -476,7 +500,7 @@ h3 {
     display: flex;
     flex-direction: column;
     width: 446.67px;
-    height: 163px;
+    height: 124px;
     padding: 20px;
     gap: 15px;
     
@@ -493,3 +517,4 @@ ul, .link-footer {
     padding: 0px;
     margin: 0px;
 }
+
