@@ -546,20 +546,56 @@ ul, .link-footer {
     
 }
 
-@media (max-width: 376px) {
+@media (max-width: 768px) {
+    :root {
+        width: auto;
+    }
+
+    body {
+        max-width: 375px;
+        margin: 8px;
+    }
+
+
     header {
         display: flex;
         flex-direction: column;
         width: 100%;
-        justify-content: center;
+        height: auto;
+    }
+
+    nav {
+        width: 100%;
+        padding: 0px;
+    }
+
+    nav .box {
+        width: 50%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
     }
 
     form {
 
     }
 
-    .filters {
+    .filter-button {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .activitys {
+        width: 100%;
+    }
+
+    .grid-cards-activity {
+        display: flex;
+        flex-direction: column;
     }
 }
