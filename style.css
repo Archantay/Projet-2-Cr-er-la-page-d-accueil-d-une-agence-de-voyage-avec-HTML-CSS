@@ -13,7 +13,8 @@
 
 body {
     max-width: 1440px;
-    margin: 0px;
+    min-width: 320px;
+    margin: 0px 30px;
 
 }
 
@@ -29,13 +30,13 @@ header {
 
 .logo {
     width: 61px;
-    padding: 30px 50px 30px 30px; 
+    padding: 30px 50px 30px 0px; 
     gap: 10px;
 }
 
 nav {
     width: 24%;
-    padding: 0px 40px 0px 50px;
+    padding: 0px 0px 0px 50px;
     justify-content: flex-end;
 }
 
@@ -82,7 +83,6 @@ main {
     display: flex;
     flex-direction: column;
     width: 95%;
-    margin-left: 30px;
     gap: 8px;
 }
 
@@ -100,9 +100,6 @@ p {
     margin: 0px;
 }
 
-form {
-    margin-left: 30px;
-}
 
 .form-content {
     display: flex;
@@ -148,9 +145,7 @@ form input {
 }
 
 .filters {
-    margin-left: 30px;
     width: 60%;
-    height: 50px;
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -222,7 +217,6 @@ form input {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin-left: 30px;
 }
 
 .info img {
@@ -254,7 +248,7 @@ form input {
     border-radius: 15px;
     gap: 30px;
     padding: 30px;
-    margin-left: 30px;
+
 }
 
 h2 {
@@ -336,7 +330,7 @@ h3 {
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    width: 25%;
+    width: 30%;
     height: auto;
     padding: 30px;
     border-radius: 15px;
@@ -415,18 +409,13 @@ h3 {
     padding: 30px;
     gap: 30px;
 }
-
-.activitys h2 {
-    margin-left: 30px;
-}
  
 .grid-cards-activity {
     display: grid;
-    width: 95.7%;
+    width: 100%;
     height: 380px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
-    margin-left: 30px;
 }
 
 .card-activity {
@@ -457,10 +446,8 @@ footer {
     display: flex;
     flex-direction: row;
     background-color: #F2F2F2;
-    width: 92%;
+    width: 100%;
     height: 163px;
-    position: relative;
-    left: 60px;
     margin-top: 35px;
 }
 
@@ -552,7 +539,13 @@ ul, .link-footer {
     }
 
     body {
-        max-width: 375px;
+        max-width: 768px;
+        min-width: 375px;
+        margin: 0px;
+    }
+
+    section {
+        max-width: 768px;
     }
 
 
@@ -561,27 +554,63 @@ ul, .link-footer {
         flex-direction: column;
         width: 100%;
         height: auto;
+        align-items: center;
+    }
+
+    .logo {
+        padding: 30px 50px 30px 50px;
     }
 
     nav {
         width: 100%;
         padding: 0px;
+        border-bottom: 2px solid #F2F2F2;
+        gap: 0px;
     }
 
     nav .box {
         width: 50%;
+        justify-content: center;
+    }
+
+    .box:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
     }
 
     main {
         width: 100%;
     }
 
-    footer {
+    .info-group {
+        margin-left: 30px;
+        width: 80%;
+    }
+
+    .form-content {
         width: 100%;
     }
 
-    form {
+    .form-img {
+        width: 5%;
+    }
 
+    .placeholder {
+        width: 75%;
+    }
+
+    .form-button {
+        text-indent: -9999px;
+        background-image: url("Images/Icones/IconeRecherche.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        border-radius: 15px;
+        width: 14%;
+    }
+
+    .filters {
+        flex-direction: column;
     }
 
     .filter-button {
@@ -589,12 +618,61 @@ ul, .link-footer {
         grid-template-columns: 1fr 1fr;
     }
 
+    .button {
+        width: auto;
+    }
+
+    .hebergements-and-populars {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .populars {
+        width: 80%;
+        margin: 0px;
+    }
+
+    .grid-cards-populars {
+        flex-direction: column;
+    }
+
+    .card-popular {
+        width: auto;
+        height: 148px;
+    }
+
+    .hebergements {
+        width: 80%;
+        margin: 0px;
+        background-color: white;
+        gap: 15px;
+    }
+
+    .grid-cards-hebergement {
+        grid-template-columns: 1fr;
+    
+    }
+
     .activitys {
-        width: 100%;
+        width: 90%;
     }
 
     .grid-cards-activity {
         display: flex;
         flex-direction: column;
+    }
+
+    .card-activity {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .footer-box {
+        height: auto;
     }
 }
