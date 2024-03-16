@@ -321,6 +321,7 @@ h3 {
 }
 
 .link-cards {
+    display: contents;
     text-decoration: none;
     color: black;
 }
