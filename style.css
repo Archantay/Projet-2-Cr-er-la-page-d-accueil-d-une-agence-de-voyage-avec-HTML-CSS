@@ -497,7 +497,7 @@ ul, .link-footer {
     }
 
     .card-hebergement {
-        width: 100%;
+        width: 97%;
     }
 
     .populars {
@@ -670,6 +670,10 @@ ul, .link-footer {
     .card-popular {
         width: auto;
         height: 148px;
+    }
+
+    .card-img-popular {
+        width: auto;
     }
 
     .hebergements {
