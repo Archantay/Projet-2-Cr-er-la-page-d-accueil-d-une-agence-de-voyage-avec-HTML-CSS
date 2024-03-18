@@ -492,8 +492,8 @@ ul, .link-footer {
     }
 
     .hebergements {
-        width: 88%;
-        margin: 0px 30px 0px 30px;
+        width: 93%;
+        margin: 0px 30px 0px 0px;
     }
 
     .card-hebergement {
@@ -501,8 +501,8 @@ ul, .link-footer {
     }
 
     .populars {
-        width: 88%;
-        margin: 0px 30px 0px 30px;
+        width: 93%;
+        margin: 0px 30px 0px 0px;
     }
 
     .grid-cards-populars {
@@ -516,8 +516,8 @@ ul, .link-footer {
     }
 
     .activitys {
-        width: 94%;
-        margin-left: 30px;
+        width: 100%;
+        margin-left: 0px;
     }
 
     .grid-cards-activity {
@@ -536,7 +536,7 @@ ul, .link-footer {
     }
 
     .activity-title {
-        bottom: 16px;
+        bottom: 13px;
         right: 7px;
 
     }
@@ -713,6 +713,10 @@ ul, .link-footer {
 
     .card-img-activity {
         height: 80%;
+    }
+
+    .activity-title {
+        bottom: 9px;
     }
 
     footer {
