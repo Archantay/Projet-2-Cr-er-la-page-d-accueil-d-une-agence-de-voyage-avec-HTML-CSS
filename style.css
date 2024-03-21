@@ -502,6 +502,7 @@ ul, .link-footer {
     .populars {
         width: 93%;
         margin: 0px 30px 0px 0px;
+        padding: 30px;
     }
 
     .grid-cards-populars {
