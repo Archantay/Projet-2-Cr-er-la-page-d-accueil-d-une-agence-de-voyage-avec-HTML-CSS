@@ -129,10 +129,12 @@ form input {
 }
 
 .form-button {
+    width: 132px;
+    height: 49px;
     background-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
     border: 1px #0065FC;
-    padding: 15px 16px 15px 16px; 
+    padding: 15px 16px 15px 16px;
     color: white;
     font-weight: bold;
     font-size: 1.12em;
@@ -228,7 +230,6 @@ form input {
 .hebergements-and-populars {
     display: flex;
     flex-direction: row;
-    height: 644px;
     gap: 35px;
     padding: 0px 30px;
 }
@@ -314,7 +315,7 @@ h3 {
     margin: 0px;
 }
 
-.grid-cards-hebergement a {
+.grid-cards-hebergement, a {
     text-decoration: none;
     color: black;
 }
@@ -332,7 +333,7 @@ h3 {
     background-color: #F2F2F2;
     width: 30%;
     height: auto;
-    padding: 30px;
+    padding: 30px 30px 10px;
     border-radius: 15px;
     gap: 30px;
 }
